@@ -1,0 +1,8 @@
+TODOS:
+make github and share 
+document and write out whats going on in code 
+figure out how solution py works 
+write out notes on whats going on in part 1 
+write psuedocode 
+code 
+do same for part 2
