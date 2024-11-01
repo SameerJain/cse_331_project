@@ -10,6 +10,9 @@ https://autolab.cse.buffalo.edu/courses
 PROJECT DETAILS:
 https://www-student.cse.buffalo.edu/~atri/cse331/fall24/project/index.html
 
+NOTATION PAGE:
+https://www-student.cse.buffalo.edu/~atri/cse331/fall24/project/notation.html
+
 CODING PROBLEMS:
 https://www-student.cse.buffalo.edu/~atri/cse331/fall24/project/coding.html
 
