@@ -1,8 +1,7 @@
+"""
+Parent class for the router and the client
+"""
 class Node:
-
-    """
-    Parent class for the router and the client
-    """
 
     def __init__(self, identifier, bandwidth=float("inf"), neighbors = set()):
 
@@ -14,7 +13,7 @@ class Node:
         # For use with pdb
         return "{}(ID: {}, bandwidth: {})".format(self.__class__.__name__, self.id, self.bandwidth)
 
-
+#endpoint that recieves packets
 class Client(Node):
 
     def __init__(self, identifier, path, packet, bandwidth, neighbors, is_rural=False):
@@ -43,13 +42,14 @@ class Client(Node):
     def __repr__(self):
         return "{}(ID: {}, bandwidth: {}, path: {}, packet: {}, is_rural: {}, has_received: {})".format(self.__class__.__name__, self.id, self.bandwidth, self.path, self.packet, self.is_rural, self.has_received)
 
+#data packet
+
+"""
+Packet object, not actually "forwarded" in the technical sense of the word
+but its location variable helps keep track of how far along in its path it is
+"""
 
 class Packet:
-
-    """
-    Packet object, not actually "forwarded" in the technical sense of the word
-    but its location variable helps keep track of how far along in its path it is
-    """
 
     def __init__(self, client, path, priority=0):
 
@@ -63,7 +63,7 @@ class Packet:
         # Unlike the delay, only incremented if the packet was actually forwarded
         self.location = 0
 
-        #TODO: try removing
+        #TODO: try removing #!-this was from given code
         # Might not need this since we sort the clients initally, but for the sake of completeness
         self.priority = priority
 

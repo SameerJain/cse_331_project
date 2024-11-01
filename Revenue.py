@@ -1,3 +1,6 @@
+"""
+manages ISP revenue including penalties and fines, etc
+"""
 class Revenue:
 
     def __init__(self):

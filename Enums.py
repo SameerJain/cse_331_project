@@ -1,3 +1,7 @@
+"""
+defines indices for tests
+"""
+
 from enum import Enum
 
 class Info(Enum):

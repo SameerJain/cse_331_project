@@ -1,3 +1,7 @@
+"""
+Takes a test case as a file input
+simulates given solution and finds final revenue
+"""
 import sys
 import pickle
 import copy
@@ -9,7 +13,7 @@ from Traversals import bfs_path
 
 
 class Driver:
-
+# constructs the driver to run the solution
     def __init__(self):
         if len(sys.argv) < 2:
             print("Please provide the testcase filepath as a command line argument")
@@ -38,6 +42,7 @@ class Driver:
         print("=============================================")
         print("Revenue: " + str(revenue))
 
+#runs the simulation and calculates revenue
     def run_helper(self, input, info, paths, updated_bandwidths=None, priorities=None):
 
         simulator = Simulator()
@@ -57,8 +62,7 @@ class Driver:
         fcc_fine = 0 if 'fcc_fine' not in info else info['fcc_fine']
         cost_bandwidth = 0 if 'cost_bandwidth' not in info else info['cost_bandwidth']
 
-        simulator.run(input.graph, input.isp, list_clients,
-                      paths, bandwidths, priorities, is_rural)
+        simulator.run(input.graph, input.isp, list_clients,paths, bandwidths, priorities, is_rural)
 
         client_delays = simulator.get_delays(list_clients)
 

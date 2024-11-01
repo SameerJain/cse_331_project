@@ -1,3 +1,7 @@
+"""
+runs packet routing based on provided paths 
+handles packet movement
+"""
 from Objects import Node, Client, Packet
 from LinkedList import LinkedList
 from collections import deque, defaultdict

@@ -1,3 +1,7 @@
+"""
+includes main method that must best modified for each problem
+Problem 1: just change path
+"""
 from Traversals import bfs_path
 import heapq
 from collections import deque

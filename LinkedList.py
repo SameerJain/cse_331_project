@@ -1,3 +1,7 @@
+"""
+maintains paths, packet queues and tracking routing sequences
+This is the data structure the graph uses 
+"""
 class Node:
     def __init__(self, id):
         self.id = id
@@ -6,7 +10,8 @@ class Node:
 
 class LinkedList:
 
-    def __init__(self, data = None):
+#creates a new list 
+    def __init__(self, data = None): 
 
         self.size = 0
         self.head = Node(None)
@@ -30,7 +35,7 @@ class LinkedList:
         self.size += 1
 
     def remove(self, id):
-
+    #looks long because it must be o(n) time 
         trav = self.head
         while trav != None:
             trav = trav.next

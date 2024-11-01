@@ -1,3 +1,4 @@
+"BFS Path for finding shortest paths in a network"
 from collections import deque
 
 
@@ -25,3 +26,6 @@ def bfs_path(graph, isp, list_clients):
         paths[client] = path
 
     return paths
+
+
+

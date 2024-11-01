@@ -1,3 +1,4 @@
+"The class reads input files and handles different problem formats based off of number"
 import re
 from Graph import Graph
 from Enums import Info
