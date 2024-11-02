@@ -1,5 +1,8 @@
 TODOS:  
+write out solutions with explanation
 write out notes on whats going on in part 1 
 write psuedocode 
 code 
-do same for part 2
+write notes and explanation for part 2 
+write psuedocode 
+code
