@@ -85,22 +85,22 @@ returns:
     
     while q:
         curr = q.pop()
-        for nbr in adj_list[curr]:
-            if dist[nbr] == -1:
-                q.appendleft(nbr)
-                dist[nbr] = dist[curr]+ 1
-                parent[nbr] = curr
-    paths = []
+        for nbr in adj_list[curr]: # loop for neighbhors 
+            if dist[nbr] == -1: # do if nbr not visited
+                q.appendleft(nbr) # add neighbhor to queue for future processing
+                dist[nbr] = dist[curr]+ 1 # update shortest ditance from neighbhor
+                parent[nbr] = curr # set parent to remake the path
+    paths = [] # init list to store paths for each node 
     
     for node in range(len(adj_list)):
-        path = node[node]
-        curr = node
-        while parent[curr] != -1:
-            curr = parent[curr]
-            path.append(curr)
-        path.reverse()
-        paths.append(path)
-    
-    return dist,paths 
+        path = node[node] # star path with current node 
+        curr = node 
+        while parent[curr] != -1: # traverse back using parent array
+            curr = parent[curr] #move to parent node
+            path.append(curr) #append node to path
+        path.reverse() # reverse path to get order from start to node 
+        paths.append(path) # add new path to paths list
+
+    return dist,paths # return dist and paths 
         
     

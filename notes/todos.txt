@@ -1,4 +1,12 @@
 TODOS:  
+just jump into p1 now 
+
+
+
+
+
+
+
 write out solutions with explanation
 write out notes on whats going on in part 1 
 write psuedocode 
